@@ -122,6 +122,7 @@
 #define DROPSHIP_TORNADO "dropship_tornado"
 #define DROPSHIP_TYPHOON "dropship_typhoon"
 #define DROPSHIP_TRIPOLI "dropship_tripoli"
+#define DROPSHIP_GIBRALTAR "dropship_gibraltar"
 
 // shiptest
 #define DROPSHIP_CMM "dropship_cmm"

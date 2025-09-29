@@ -430,3 +430,6 @@
 
 /obj/item/rappel_harness/extract/cmm
 	shuttle_id = DROPSHIP_CMM
+
+/obj/item/rappel_harness/extract/rmc
+	shuttle_id = DROPSHIP_GIBRALTAR
