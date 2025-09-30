@@ -392,6 +392,7 @@
 	locked = TRUE
 	faction = FACTION_WY_DEATHSQUAD
 
+// ST Edit Start
 //##############################
 
 /datum/squad/marine/cmm
@@ -409,7 +410,7 @@
 	active = FALSE
 	roundstart = FALSE
 	locked = TRUE
-
+// ST Edit End
 //##############################
 
 /datum/squad/marine/pmc

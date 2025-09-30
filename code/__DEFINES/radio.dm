@@ -79,6 +79,3 @@
 #define RADIO_CHANNEL_MERC "Mercenaries"
 
 #define RADIO_CHANNEL_YAUTJA "Yautja"
-
-// shiptest
-#define RADIO_CHANNEL_CMM "League Minutemen"

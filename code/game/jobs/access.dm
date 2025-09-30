@@ -299,6 +299,8 @@
 				ACCESS_UPP_TLPREP,
 				ACCESS_UPP_MACHINEGUN
 			)
+
+		// ST Edit Start
 		if(ACCESS_LIST_MINUTEMEN_PLATOON)
 			return list(
 				ACCESS_CMM_GENERAL,
@@ -308,6 +310,7 @@
 				ACCESS_CMM_OFFICERS,
 				ACCESS_CMM_FLAG_OFFICERS
 			)
+		// ST Edit End
 
 		if(ACCESS_LIST_TWE_ALL)
 			return list(

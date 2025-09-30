@@ -428,8 +428,10 @@
 /obj/item/rappel_harness/extract/nauk
 	shuttle_id = DROPSHIP_UPP
 
+// ST Edit Start
 /obj/item/rappel_harness/extract/cmm
 	shuttle_id = DROPSHIP_CMM
+// ST Edit End
 
 /obj/item/rappel_harness/extract/rmc
 	shuttle_id = DROPSHIP_GIBRALTAR

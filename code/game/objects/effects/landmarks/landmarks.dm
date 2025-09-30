@@ -442,6 +442,7 @@
 
 	RegisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
 
+// ST Edit Start
 /obj/effect/landmark/late_join/cmm
 	name = "cmm late join"
 	squad = SQUAD_CMM
@@ -450,6 +451,7 @@
 	. = ..()
 
 	RegisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
+// ST Edit End
 
 /obj/effect/landmark/late_join/working_joe
 	name = "working joe late join"

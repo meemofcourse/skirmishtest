@@ -61,6 +61,7 @@
 	if(option == JSGT_VARIANT)
 		gear_preset = gear_preset_secondary
 
+// ST Edit Start
 /datum/job/marine/tl/ai/cmm
 	title = JOB_SQUAD_MINUTEMAN_TEAM_LEADER
 	gear_preset = /datum/equipment_preset/cmm/tl
@@ -73,6 +74,7 @@
 		gear_preset = initial(gear_preset)
 	else
 		gear_preset = gear_preset_secondary
+// ST Edit End
 
 /datum/job/marine/tl/ai/forecon
 	total_positions = 1

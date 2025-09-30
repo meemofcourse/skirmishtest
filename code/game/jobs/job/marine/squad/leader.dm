@@ -69,6 +69,7 @@ OverrideTimelock(/datum/job/marine/leader, list(
 	else
 		gear_preset = gear_preset_secondary
 
+// ST Edit Start
 /datum/job/marine/leader/ai/cmm
 	title = JOB_SQUAD_MINUTEMAN_LEADER
 	gear_preset = /datum/equipment_preset/cmm/leader
@@ -87,6 +88,7 @@ OverrideTimelock(/datum/job/marine/leader, list(
 	name = JOB_SQUAD_MINUTEMAN_LEADER
 	squad = SQUAD_CMM
 	job = /datum/job/marine/leader/ai/cmm
+// ST Edit End
 
 /datum/job/marine/leader/ai/forecon
 	title = JOB_SQUAD_LEADER_FORECON
