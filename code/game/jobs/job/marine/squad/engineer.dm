@@ -30,6 +30,7 @@
 
 	return (slots*4)
 
+// ST Edit Start
 /datum/job/marine/engineer/ai
 	total_positions = 2
 	spawn_positions = 2
@@ -46,6 +47,7 @@
 		gear_preset = initial(gear_preset)
 	else
 		gear_preset = gear_preset_secondary
+// ST Edit End
 
 /datum/job/marine/engineer/whiskey
 	title = JOB_WO_SQUAD_ENGINEER

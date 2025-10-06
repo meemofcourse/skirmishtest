@@ -102,6 +102,7 @@
 	if(option == CPL_VARIANT)
 		gear_preset = gear_preset_secondary
 
+// ST Edit Start
 /datum/job/marine/medic/ai/cmm
 	title = JOB_SQUAD_MINUTEMAN_MEDIC
 	total_positions = 2
@@ -116,6 +117,7 @@
 		gear_preset = initial(gear_preset)
 	else
 		gear_preset = gear_preset_secondary
+// ST Edit End
 
 /datum/job/marine/medic/ai/forecon
 	title = JOB_SQUAD_MEDIC_FORECON

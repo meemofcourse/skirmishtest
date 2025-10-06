@@ -3,9 +3,11 @@
 	title = JOB_CO
 	supervisors = "USCM high command"
 	selection_class = "job_co"
+	// ST Edit Start
 	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADMIN_NOTIFY
 //	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADMIN_NOTIFY|ROLE_WHITELISTED // the stakes aren't as high as to need a whitelist role yknow
 //	flags_whitelist = WHITELIST_COMMANDER
+	// ST Edit End
 	gear_preset = /datum/equipment_preset/uscm_ship/commander
 
 /datum/job/command/commander/New()
@@ -58,6 +60,7 @@
 	icon_state = "co_spawn"
 	job = /datum/job/command/commander
 
+// ST Edit Start
 /datum/job/command/commander/ai
 	prime_priority = TRUE
 
@@ -78,4 +81,4 @@
 	name = JOB_CO_MINUTEMAN
 	icon_state = "co_spawn"
 	job = /datum/job/command/commander/ai/cmm
-
+// ST Edit End

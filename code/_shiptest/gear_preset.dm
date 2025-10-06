@@ -1,3 +1,15 @@
+#define EQUIPMENT_PRESET_STUB 0
+#define EQUIPMENT_PRESET_START_OF_ROUND (1<<0)
+#define EQUIPMENT_PRESET_EXTRA (1<<1)
+#define EQUIPMENT_PRESET_START_OF_ROUND_WO (1<<2)
+#define EQUIPMENT_PRESET_MARINE (1<<3)
+#define AMERICAN_ETHNICITY "American"
+#define LATIN_AMERICAN_ETHNICITY "Latin-American"
+#define JAPANESE_ETHNICITY "Japanese"
+#define UPP_ETHNICITY "Progressive"
+#define CHINESE_ETHNICITY "Chinese"
+#define BRAZILIAN_ETHNICITY "Brazilian"
+
 /datum/equipment_preset/cmm
 	name = "C-MM"
 	faction = FACTION_CMM
@@ -229,7 +241,7 @@
 	minimap_background = MINIMAP_ICON_BACKGROUND_CIC
 	var/access_list = ACCESS_LIST_MARINE_MAIN
 
-/datum/equipment_preset/cmm/captain/so/New()
+/datum/equipment_preset/cmm/captain/New()
 	. = ..()
 	access = get_access(access_list)
 
@@ -260,7 +272,7 @@
 // ERT members that spawn with full gear from DEFCON
 
 /datum/equipment_preset/cmm/minuteman/equipped
-	name = "USCM Squad Rifleman (Equipped)"
+	name = "C-MM Squad Rifleman (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	paygrades = list(PAY_SHORT_ME1 = JOB_PLAYTIME_TIER_0, PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_1, PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_3)
@@ -305,7 +317,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 
 /datum/equipment_preset/cmm/minuteman/equipped/eva
-	name = "USCM Squad Rifleman (Equipped, EVA)"
+	name = "C-MM Squad Rifleman (Equipped, EVA)"
 
 /datum/equipment_preset/cmm/minuteman/equipped/eva/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "Marine Undershirt"
@@ -339,7 +351,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/sg/equipped
-	name = "USCM Squad Smartgunner (Equipped)"
+	name = "C-MM Squad Smartgunner (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP)
@@ -396,7 +408,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/tl/equipped
-	name = "USCM Squad Leader (Equipped)"
+	name = "C-MM Squad Leader (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_TL_PREP)
@@ -450,7 +462,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/medic/equipped
-	name = "USCM Squad Hospital Corpsman (Equipped)"
+	name = "C-MM Squad Hospital Corpsman (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY)
@@ -506,7 +518,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/leader/equipped
-	name = "USCM Section Sergeant (Equipped)"
+	name = "C-MM Section Sergeant (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
@@ -565,7 +577,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/engineer/equipped
-	name = "USCM Squad Combat Engineer (Equipped)"
+	name = "C-MM Squad Combat Engineer (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_ENGPREP, ACCESS_CIVILIAN_ENGINEERING)
@@ -626,7 +638,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/mortar_operator_equipped
-	name = "USCM Mortar Operator (Equipped)"
+	name = "C-MM Mortar Operator (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_ENGPREP, ACCESS_CIVILIAN_ENGINEERING)
@@ -668,7 +680,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/specialist_equipped
-	name = "USCM Specialized Weapons Operator, M5 RPG (Equipped)"
+	name = "C-MM Specialized Weapons Operator, M5 RPG (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
 	assignment = "Rocketeer"
@@ -722,7 +734,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/specialist_equipped/loader
-	name = "USCM Specialized Weapons Operator, M5 RPG Loader(Equipped)"
+	name = "C-MM Specialized Weapons Operator, M5 RPG Loader(Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
 	assignment = "Rocketeer"
@@ -784,7 +796,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/specialist_equipped/b18
-	name = "USCM Specialized Weapons Operator, B18 (Equipped)"
+	name = "C-MM Specialized Weapons Operator, B18 (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	assignment = "Experimental Heavy Rifleman"
 	rank = JOB_SQUAD_SPECIALIST
@@ -822,7 +834,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/specialist_equipped/sniper
-	name = "USCM Scout Sniper, Shooter (Equipped)"
+	name = "C-MM Scout Sniper, Shooter (Equipped)"
 	assignment = "Scout Sniper"
 	role_comm_title = "SctSnpr"
 	skills = /datum/skills/nco
@@ -871,7 +883,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/cmm/specialist_equipped/spotter
-	name = "USCM Scout Sniper, Spotter (Equipped)"
+	name = "C-MM Scout Sniper, Spotter (Equipped)"
 	assignment = "Scout Sniper"
 	role_comm_title = "SctSnpr"
 	rank = JOB_SQUAD_SPOTTER
@@ -921,7 +933,7 @@
 //*****************************************************************************************************/
 
 /* /datum/equipment_preset/cmm/tank
-	name = "USCM Vehicle Crewman (Equipped)"
+	name = "C-MM Vehicle Crewman (Equipped)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	access = list(
 		ACCESS_MARINE_PREP,
@@ -968,3 +980,15 @@
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 */
+
+#undef EQUIPMENT_PRESET_STUB
+#undef EQUIPMENT_PRESET_START_OF_ROUND
+#undef EQUIPMENT_PRESET_EXTRA
+#undef EQUIPMENT_PRESET_START_OF_ROUND_WO
+#undef EQUIPMENT_PRESET_MARINE
+#undef AMERICAN_ETHNICITY
+#undef LATIN_AMERICAN_ETHNICITY
+#undef JAPANESE_ETHNICITY
+#undef UPP_ETHNICITY
+#undef CHINESE_ETHNICITY
+#undef BRAZILIAN_ETHNICITY

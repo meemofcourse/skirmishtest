@@ -74,6 +74,7 @@
 	if(option == PVT_VARIANT)
 		gear_preset = gear_preset_secondary
 
+// ST Edit Start
 /datum/job/marine/standard/ai/cmm
 	title = JOB_SQUAD_MINUTEMAN
 	gear_preset = /datum/equipment_preset/cmm/minuteman
@@ -86,6 +87,7 @@
 		gear_preset = initial(gear_preset)
 	else
 		gear_preset = gear_preset_secondary
+// ST Edit End
 
 /datum/job/marine/standard/ai/forecon
 	title = JOB_SQUAD_MARINE_FORECON
@@ -119,6 +121,7 @@
 	if(option == LCPL_VARIANT)
 		gear_preset = gear_preset_secondary
 
+// ST Edit Start
 /datum/job/marine/standard/ai/rto/cmm
 	total_positions = 1
 	spawn_positions = 1
@@ -133,6 +136,7 @@
 		gear_preset = initial(gear_preset)
 	else
 		gear_preset = gear_preset_secondary
+// ST Edit End
 
 /obj/effect/landmark/start/marine/upp
 	name = JOB_SQUAD_MARINE_UPP

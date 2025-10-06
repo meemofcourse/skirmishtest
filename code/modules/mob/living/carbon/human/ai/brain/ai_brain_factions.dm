@@ -826,11 +826,13 @@
 		"I'M FUBAR, MAN!",
 	)
 
+// ST Edit Start
 /datum/human_ai_faction/cmm
 	faction = FACTION_CMM
 	friendly_factions = list()
 	neutral_factions = list()
 	enter_combat_lines = list()
+// ST Edit End
 
 /datum/human_ai_faction/usa
 	faction = FACTION_ARMY
